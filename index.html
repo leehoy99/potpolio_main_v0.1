@@ -1,0 +1,289 @@
+<!-- 
+20230419
+모바일 환경 nav 구현
+GO TO 모바일 환경에서 텍스트 이상
+요 - 사이트 이미지 마우스 호버 시 텍스트에 호버되면 뒤의 블러가 사라짐.
+피어 오브 갓 사이트에서 모바일 환경으로 화면 축소 시 장바구니가 튀어나옴.
+
+20230426
+GO TO 모바일 환경에서 텍스트 이상 -> 해결
+가끔 초기화면에서 오른쪽 공백화면 출력
+-->
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/index.css">
+    <script src="https://kit.fontawesome.com/715ffe66fa.js" crossorigin="anonymous"></script>
+    <script defer src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script defer src="./js/index.js"></script>
+    <title>LEEHOYOUN</title>
+</head>
+<body>
+    <nav class="">
+        <div class="nav-box">
+            <ul>
+                <li><p>FOG</p></li>
+                <li><p>TOSS.im</p></li>
+                <li><p>JS/Jquery</p></li>
+                <li><p>About Me</p></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="m-nav">
+        <div class="nav-btn">
+            <span class="span1"></span>
+            <span class="span2"></span>
+            <span class="span3"></span>
+        </div>
+        <div class="m-nav-box">
+            <ul>
+                <li><p>HOME</p></li>
+                <li><p>FOG</p></li>
+                <li><p>TOSS.im</p></li>
+                <li><p>JS/Jquery</p></li>
+                <li><p>About Me</p></li>
+            </ul>
+            <div class="m-nav-contact-box">
+                <div class="m-nav-contact-item">
+                    <a href="https://www.instagram.com/lee_hoyoun_99/" target="_blank" >
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+                <div class="m-nav-contact-item">
+                    <a href="mailto:leehoy19991001@gmail.com" target="_blank">
+                        <i class="fa-regular fa-envelope"></i>
+                    </a>
+                </div>
+                <div class="m-nav-contact-item">
+                    <a href="https://github.com/leehoy99" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contents">
+        <section class="main">
+            <img class="mokup-img " src="./imges/목업 배경빼고 사이드 이미지.png" alt="">
+            <div class="bg-img-box">
+                <!-- <img class="mokup-img " src="./imges/목업 배경 메인컬러 모니터빼고 사이드이미지.png" alt=""> -->
+                <img class="bg-img" src="./imges/screencapture-fearofgod-2022-09-23-16_55_30.png" alt="">
+            </div>
+        </section>
+
+        <section class="grid">
+            <div class="grid-contents">
+                <!-- <img src="./imges/demo.jpeg" alt=""> -->
+                <div class="grid-img">
+                    <img src="./imges/screencapture-fearofgod-2022-09-23-16_55_30.png" alt="">
+                </div>
+                <div class="grid-text">
+                    <h1 class="title">FOG</h1>
+                    <br>
+                    <br>
+                    <p>제작 기간 : 1개월</p>
+                    <br>
+                    <p>제작 툴 : VSCode</p>
+                </div>
+            </div>
+            <div class="grid-contents">
+                <!-- <img src="./imges/demo.jpeg" alt=""> -->
+                <div class="grid-img">
+                    <img src="./imges/screencapture-toss-im-2022-10-27-18_07_31.png" alt="">
+                </div>
+                <div class="grid-text">
+                    <h1 class="title">Toss.im</h1>
+                    <br>
+                    <br>
+                    <p>제작 기간 : 1개월</p>
+                    <br>
+                    <p>제작 툴 : VSCode</p>
+                </div>
+            </div>
+            <div class="grid-contents">
+                <!-- <img src="./imges/demo.jpeg" alt=""> -->
+                <div class="grid-img">
+                    <img src="./imges/screencapture-file-C-Users-Desktop-js-1-html-2022-11-08-13_35_21.png" alt="">
+                </div>
+                <div class="grid-text">
+                    <h1 class="title">Wave</h1>
+                    <br>
+                    <br>
+                    <p>제작 기간 : 1개월</p>
+                    <br>
+                    <p>제작 툴 : VSCode</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section1">
+            <div class="box1 box">
+                <div class="blur-text">
+                    <p><b>GO SITE</b></p>
+                </div>
+                <div class="box1-contents box-contents">
+                    <a href="https://adorable-sunburst-b6d329.netlify.app/" target="_blank">
+                        <img src="./imges/screencapture-fearofgod-2022-09-23-16_55_30.png" alt="">
+                        <div class="blur">
+                            <!-- <i class="fa-thin fa-house"></i> -->
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="box2 box">
+                <div class="box2-contents box-contents">
+                    <div class="contents-title">
+                        <h1>FOG <span class="highlight">(React.js)</span></h1>
+                    </div>
+                    <span class="space" /></span>
+                    <a class="m-img" href="https://adorable-sunburst-b6d329.netlify.app/" target="_blank">
+                        <img src="./imges/screencapture-fearofgod-2022-09-23-16_55_30.png" alt="">
+                        <div class="blur">
+                            <!-- <i class="fa-thin fa-house"></i> -->
+                        </div>
+                    </a>
+                    <div class="contents-description">
+                        <h3>fakestore api 를 활용한 react Clone 사이트 입니다.</h3>
+                    </div>
+                    <span class="space"></span>
+                    <div class="contents-text">
+                        <p>제작 기간 : 1개월</p>
+                        <br />
+                        <p>제작 툴 : React, FakeStore API</p>
+                    </div>
+                </div>
+                <div class="goto-btn">
+                    <a href="https://adorable-sunburst-b6d329.netlify.app/" target="_blank"><h2>Go to Site</h2></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section2">
+            <div class="box1 box">
+                <div class="box1-contents box-contents">
+                    <div class="contents-title">
+                        <h1>Toss.im <span class="highlight">(jQuery)</span></h1>
+                    </div>
+                    <span class="space"></span>
+                    <a class="m-img" href="https://beamish-douhua-d44b22.netlify.app" target="_blank">
+                        <img src="./imges/screencapture-toss-im-2022-10-27-18_07_31.png" alt="">
+                        <div class="blur">
+                        </div>
+                    </a>
+                    <div class="contents-description">
+                        <h3>스크롤 이벤트를 중심적으로 활용한 jQuery Clone 사이트입니다.</h3>
+                    </div>
+                    <span class="space"></span>
+                    <div class="contents-text">
+                        <p>제작 기간 : 1개월</p>
+                        <br />
+                        <p>제작 툴 : Jquery</p>
+                    </div>
+                </div>
+                <div class="goto-btn">
+                    <a href="https://beamish-douhua-d44b22.netlify.app" target="_blank"><h2>Go to Site</h2></a>
+                </div>
+            </div>
+            <div class="box2 box">
+                <div class="blur-text">
+                    <p><b>GO SITE</b></p>
+                </div>
+                <div class="box2-contents box-contents">
+                    <a href="https://genuine-cassata-4f4fd9.netlify.app/" target="_blank">
+                        <img src="./imges/screencapture-toss-im-2022-10-27-18_07_31.png" alt="">
+                        <div class="blur">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section3">
+            <div class="box1 box">
+                <div class="blur-text">
+                    <p><b>GO SITE</b></p>
+                </div>
+                <div class="box1-contents box-contents">
+                    <a href="https://inspiring-torrone-07d337.netlify.app/" target="_blank">
+                        <img src="./imges/screencapture-file-C-Users-Desktop-js-1-html-2022-11-08-13_35_21.png" alt="">
+                        <div class="blur">
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="box2 box">
+                <div class="box2-contents box-contents">
+                    <div class="contents-title">
+                        <h1>Wave<span class="highlight"> (JavaScript)</span></h1>
+                    </div>
+                    <span class="space"></span>
+                    <a class="m-img" href="https://inspiring-torrone-07d337.netlify.app/" target="_blank">
+                        <img src="./imges/screencapture-file-C-Users-Desktop-js-1-html-2022-11-08-13_35_21.png" alt="">
+                        <div class="blur">
+                        </div>
+                    </a>
+                    <div class="contents-description">
+                        <h3>JavaScript 로 구현한 가상의 브랜드 페이지 입니다.</h3>
+                    </div>
+                    <span class="space"></span>
+                    <div class="contents-text">
+                        <p>제작 기간 : 1개월</p>
+                        <br />
+                        <p>제작 툴 : VSCode</p>
+                    </div>
+                </div>
+                <div class="goto-btn">
+                    <a href="https://inspiring-torrone-07d337.netlify.app/" target="_blank"><h2>Go to Site</h2></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section4">
+            <div class="box">
+                <div class="box-contents">
+                    <h1><span class="highlight">About Me</span></h1>
+                    <span class="space"></span>
+                    <h3>Reprehenderit veniam duis ex pariatur fugiat consequat elit.</h3>
+                    <span class="space"></span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias necessitatibus corrupti, dolorem rem nostrum saepe veniam, voluptatibus animi perspiciatis nisi excepturi? Repellat praesentium porro accusantium consequatur, voluptate fuga laboriosam provident.</p>
+                    <span class="space"></span>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem accusantium culpa minima voluptate, ad quasi similique earum, voluptatem alias quod cumque ex molestias vitae tenetur ullam consequatur vel cum sed.</p>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-contents">
+                <div class="footer-box">
+                    <div class="footer-text">
+                        <h1>Contact</h1>
+                    </div>
+                    <div class="footer-item-box">
+                        <div class="footer-item">
+                            <a href="https://www.instagram.com/lee_hoyoun_99/">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </div>
+                        <div class="footer-item">
+                            <a href="https://github.com/leehoy99">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                        <div class="footer-item">
+                            <a href="mailto:leehoy19991001@gmail.com">
+                                <i class="fa-regular fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div class="loading">Loading&#8230;</div>
+</body>
+</html>
